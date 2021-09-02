@@ -32,7 +32,7 @@ export const booksLoaded = (data) => ({
   payload: data,
 });
 export const fetchBooks = (searchQuery) => async (dispatch) => {
-  const apiKey = "AIzaSyDk3vgUfyYBQ0QX16c5nG3tZCEpjhE3AnU";
+  const apiKey = "enter your google cloud api key here";
   const URI = `https://www.googleapis.com/books/v1/volumes?q=${searchQuery}&key=${apiKey}&maxResults=40`;
   console.log(URI);
   dispatch(booksLoading());

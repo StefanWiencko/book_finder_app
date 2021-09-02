@@ -18,7 +18,7 @@ function App() {
   const BooksList = booksIds.map((bookId) => (
     <BookItem key={bookId} id={bookId} />
   ));
-
+  console.log(booksIds);
   return (
     <div className="App">
       <h3>Book find app</h3>
